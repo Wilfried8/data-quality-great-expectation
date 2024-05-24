@@ -1,0 +1,62 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "default",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_equal",
+      "kwargs": {
+        "value": 606
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "ProductKey"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "ProductKey"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ProductKey"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "ProductKey",
+        "type_list": [
+          "int",
+          "int64"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "ProductLine",
+        "value_set": [
+          "R ",
+          "S ",
+          "M ",
+          "T "
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.18.14"
+  }
+}
